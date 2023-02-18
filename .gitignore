@@ -1,0 +1,30 @@
+## dépendances
+**/node_modules
+**/packages
+
+## répertoires de sortie de build
+**/bin
+**/out
+**/target
+
+## fichiers issus de compilation
+*.o
+*.pyc
+*.class
+*.css
+
+
+
+## fichiers et dossiers cache
+**/cache/
+**/logs/
+
+*.log
+!important/*.log
+*.lock
+*.tmp
+Thumbs.db
+
+/vendor/
+.idea/workspace.xml
+.DS_Store
