@@ -1,0 +1,38 @@
+name: Feature
+description: File a new feature
+title: "[Feature]: "
+labels: ["Feature", "enhancement"]
+assignees:
+  - octocat
+body:
+  - type: markdown
+    attributes:
+      value: |
+        New Feature
+  - type: input
+    id: author
+    attributes:
+      label: Authors
+      description: authors
+      placeholder: Octocat
+    validations:
+      required: false
+  - type: textarea
+    id: whats-new
+    attributes:
+      label: What's new ?
+      description: What is new ?
+      placeholder: new stuff
+      value: | 
+        Some new stuff !
+    validations:
+      required: true
+  
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Code of Conduct
+      description: By submitting this issue, you agree to follow our [Code of Conduct](https://example.com)
+      options:
+        - label: I agree to follow this project's Code of Conduct
+          required: true
